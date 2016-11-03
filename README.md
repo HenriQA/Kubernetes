@@ -44,3 +44,12 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
   ```
   More Kubernetes add-ons can be found on this page http://kubernetes.io/docs/admin/addons/
   
+  kube-dns should now be up and running! To check it is run `kubectl get pods --all-namespaces` (it may take a few seconds to start)
+### 4. Connect nodes to the master
+  To connect a node to the master run:
+  ```
+  kubeadm join --token <token> <master-ip>
+  ```
+  (this is the one you saved earlier)
+  
+  On the master you can check to see which nodes are connected by running `kubectl get nodes` on the master.
