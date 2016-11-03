@@ -35,3 +35,12 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
    kubeadm init
    ```
   Make a note of the final line (`kubeadm join --token <token> <master-ip>`). You will use this kubeadm join command to add nodes to your master.
+##### 3. Installing a pod network
+  You now need to install a pod network. This will let your pods communicate with each other accross nodes.
+  
+  To install the "Weave Net" add-on run:
+  ```
+  kubectl create -f https://git.io/weave-kube
+  ```
+  More Kubernetes add-ons can be found on this page http://kubernetes.io/docs/admin/addons/
+  
