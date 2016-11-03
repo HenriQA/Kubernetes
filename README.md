@@ -31,5 +31,7 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
    d. kubectl
 ##### 2. Initialise the master
   Choose a machine to be your master and run:
-   ``kubeadm init``
+   ```
+   kubeadm init
+   ```
   Make a note of the final line (`kubeadm join --token <token> <master-ip>`). You will use this kubeadm join command to add nodes to your master.
