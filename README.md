@@ -10,8 +10,8 @@
  - 1GB of RAM per machiene
  - Full network connectivity between all machines in the cluster
  
-##Steps for installing on Ubuntu 16.04 
-###(for other OS follow guide on http://kubernetes.io/docs/getting-started-guides/kubeadm/)
+###Steps for installing on Ubuntu 16.04 
+###(for other OS follow guide on http://kubernetes.io/docs/getting-started-guides/kubeadm/)###
 ##### 1. Install Packages
     Become root (sudo su -), and tun the following script:
 ```bash
