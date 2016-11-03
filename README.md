@@ -12,7 +12,7 @@
  
 ##Steps for installing on Ubuntu 16.04 
 ######(for other OS follow guide on http://kubernetes.io/docs/getting-started-guides/kubeadm/)
-##### 1. Install Packages
+### 1. Install Packages
   Become root (`sudo su -`), and tun the following script (on all your nodes):
 ```bash
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -29,13 +29,13 @@ apt-get install -y kubelet kubeadm kubectl kubernetes-cni
    b. kubelet
    c. kubeadm
    d. kubectl
-##### 2. Initialise the master
+### 2. Initialise the master
   Choose a machine to be your master and run:
    ```
    kubeadm init
    ```
   Make a note of the final line (`kubeadm join --token <token> <master-ip>`). You will use this kubeadm join command to add nodes to your master.
-##### 3. Installing a pod network
+### 3. Installing a pod network
   You now need to install a pod network. This will let your pods communicate with each other accross nodes.
   
   To install the "Weave Net" add-on run:
