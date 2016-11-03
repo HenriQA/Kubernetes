@@ -1,6 +1,4 @@
-# Kubernetes
-
-#Installation
+# Kubernetes Installation
 
 ##Pre-requisites
  - OS System. Kubernetes works best when it's installed on:
