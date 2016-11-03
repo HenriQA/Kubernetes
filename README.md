@@ -12,7 +12,7 @@
  
 ##Steps for installing on Ubuntu 16.04 
 ###(for other OS follow guide on http://kubernetes.io/docs/getting-started-guides/kubeadm/)
-  1. Install Packages
+##### 1. Install Packages
     Become root (sudo su -), and tun the following script:
 ```bash
 curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | apt-key add -
@@ -24,3 +24,4 @@ apt-get update
 apt-get install -y docker.io
 apt-get install -y kubelet kubeadm kubectl kubernetes-cni
 ```
+##### 2. Say hi
