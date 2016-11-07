@@ -12,7 +12,6 @@ However, this breif guide should help you know the basics quickly.
 
 
 docker run -dit jenkins   ==    kubectl run my_jenkins --image=jenkins
- This will create a jenkins deployment
   
 docker ps   =   kubectl get po
 
