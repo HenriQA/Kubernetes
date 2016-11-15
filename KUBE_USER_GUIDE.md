@@ -34,21 +34,21 @@ This is a great visual tool for seeing how pods and services are distributed acc
 
 ### Useful things you can do with Kubernetes
 
-  1.Label nodes
+    1.Label nodes
   
-    Labelling nodes is very useful, easily allowing you to configure specific groups of nodes differently.
+      Labelling nodes is very useful, easily allowing you to configure specific groups of nodes differently.
   
-  2. Scale applications.
+    2. Scale applications.
     
-    This is very useful, allowing you to scale an application (creating and deleting containers as needed). 
-    This can even be set to do this automatically depending on some metrics.
-    To do this run: kubectl scale rc NAME --replicas = COUNT
-    This will scale the NAME service to have COUNT replicas.
+      This is very useful, allowing you to scale an application (creating and deleting containers as needed). 
+      This can even be set to do this automatically depending on some metrics.
+      To do this run: kubectl scale rc NAME --replicas = COUNT
+      This will scale the NAME service to have COUNT replicas.
     
-  3. Rollong update
+    3. Rollong update
   
-    If you would like to update an application running in multiple containers on multiple nodes, with Kubernetes it's possible.
-    To do this run: kubectl rolling-update NAME [NEW_NAME] --image=IMAGE
-    This will uptdate the NAME service containers with containers from IMAGE. This will destroy and create the containers intelligently, making sure the numbers of containers is one less or one more than the number of containers.
+      If you would like to update an application running in multiple containers on multiple nodes, with Kubernetes it's possible.
+      To do this run: kubectl rolling-update NAME [NEW_NAME] --image=IMAGE
+      This will uptdate the NAME service containers with containers from IMAGE. This will destroy and create the containers intelligently, making sure the numbers of containers is one less or one more than the number of containers.
 
 
